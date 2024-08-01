@@ -1,0 +1,58 @@
+/* src/styles.scss */
+
+/* Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Max width of the container */
+  margin: 0 auto; /* Center align horizontally */
+  padding: 0 15px; /* Horizontal padding for small screens */
+}
+
+.header, .footer {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+/* Responsive Layout */
+@media (min-width: 576px) {
+  .container {
+    padding: 0 30px; /* Increase padding for larger screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px; /* More padding for larger screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding: 0 60px; /* Even more padding for larger screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 80px; /* Maximum padding for the largest screens */
+  }
+}
